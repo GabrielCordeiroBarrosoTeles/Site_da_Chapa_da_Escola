@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/android-chrome-192x192.png" type="image/x-icon">
+    <style>
+        
+            ::-webkit-scrollbar{
+                width: 10px;
+            }::-webkit-scrollbar-track{
+                background: #DD7E00;
+                border-radius: 30px;
+            }::-webkit-scrollbar-thumb{
+                background: #000000;
+                border-radius: 30px;
+            }
+        
+        .icon{
+    display: inline-block; 
+    font-size: 64px;
+    animation: float 1s ease-in-out infinite; 
+    text-decoration: none;
+    text-decoration: none;
+    margin-top: 0.5%;
+}@keyframes float {
+    0%{
+        transform: translateY(0); /*The starting point of the animation is 0.*/
+    }50%{
+        transform: translateY(-15px); /*The middle point of the animation is -15xp. This will move the element up.*/
+    }100%{
+        transform: translateY(0); /*The last point of the animation is going back to the starting state of 0.*/
+    }
+}
+@media (max-width: 1000px) {
+    .icon{
+       left: 75%; 
+    }
+}
+    </style>
+    <title>Esportes</title>
+</head>
+<body>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-lg bg-dark" style="color: black;">
+        
+        <div class="container-fluid">
+            <a class="navbar-brand text-white" href="index.html"><img src="img/laco1.png" alt="" srcset="" style="margin-left: 4px;color: white;width: 12%;" >Todos Juntos<img src="img/teste1.png" alt="" srcset="" style="margin-left: 4px;margin-top: -5px;width: 20%;"></a>
+            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="margin-left: 2%;">
+                <li class="nav-item">
+                    <a class="nav-link active text-white" aria-current="page" href="menu.html">Menu</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  text-white" href="sugestao.html">Sugestões</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="cardapio.html">Cardápio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link text-white" href="jogos.html">Calendário de Jogos</a>
+                </li>  
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <!--Termino do Navbar-->
+    
+    <!----->
+        <div class="container mt-5">
+            <div class="card">
+                <div class="table-responsive">
+                    <div class="card-header">
+                        <h1 style="text-align: center;"><img src="img/bola2.png" alt="" srcset="" class="icon"> Calendário <img src="img/bola.png" alt="" srcset="" class="icon"></h1> 
+                    </div>
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th scope="col">Segunda</th>
+                                <th scope="col">Terça</th>
+                                <th scope="col">Quarta</th>
+                                <th scope="col">Quinta</th>
+                                <th scope="col">Sexta</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Volei</td>
+                                <td>Futsal M.</td>
+                                <td>Carimba</td>
+                                <td>Futsal F.</td>
+                                <td>Basquete/Head Ball</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <!--
+                    Formulário
+                    
+                    <div class="card-header">
+                        <h1>Link</h1> 
+                    </div>
+                    <div class="card-body">
+                        <form action="https://formsubmit.co/chapatodosj@gmail.com" method="POST">
+                            <input type="text" class="form-control" id="link" placeholder="Link da musica" name="Link da musica:"><br>
+                            <br>
+                            <input type="hidden" name="_captcha" value="false" />
+                            <input type="hidden"name="_next"value=" https://chapatodosjuntosjaa.github.io/site/sugestao.html"/>
+                            <div class="d-grid gap-2 col-6 mx-auto">
+                                <button class="btn btn-primary" type="submit" style="height: 120%;">Enviar</button>
+                        </form>
+                -->
+            </div> 
+        </div>
+    <!--Termino-->
+     
+    <!--Script do Bootstrap--><script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+</body>
+</html>

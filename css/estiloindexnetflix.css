@@ -1,0 +1,200 @@
+:root {
+    --blue-gradient-top: #2563eb;
+    --blue-gradient-bottom: #60a5fa;
+    --yellow-gradient-top: #eab308;
+    --yellow-gradient-bottom: #fde047;
+    --red-gradient-top: #dc2626;
+    --red-gradient-bottom: #f87171;
+    --cyan-gradient-top: #153b49;
+    --cyan-gradient-bottom: #155e75;
+    --green-gradient-top: #10b981;
+    --green-gradient-bottom: #6ee7b7;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+  
+  .blue-gradient {
+    background: linear-gradient(
+      to bottom,
+      var(--blue-gradient-top) 60%,
+      var(--blue-gradient-bottom) 100%
+    );
+  }
+  .yellow-gradient {
+    background: linear-gradient(
+      to bottom,
+      var(--yellow-gradient-top) 60%,
+      var(--yellow-gradient-bottom) 100%
+    );
+  }
+  .red-gradient {
+    background: linear-gradient(
+      to bottom,
+      var(--red-gradient-top) 60%,
+      var(--red-gradient-bottom) 100%
+    );
+  }
+  .cyan-gradient {
+    background: linear-gradient(
+      to bottom,
+      var(--cyan-gradient-top) 50%,
+      var(--cyan-gradient-bottom) 100%
+    );
+  }
+  .green-gradient {
+    background: linear-gradient(
+      to bottom,
+      var(--green-gradient-top) 60%,
+      var(--green-gradient-bottom) 100%
+    );
+  }
+  
+  body {
+    background-color: #141414;
+  }
+  
+  header > h1 {
+
+    margin: 0;
+    font-size: max(3.5vw, 30px);
+    color: #fff;
+    text-align: center;
+  }
+  .container {
+    min-height: 100vh;
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    
+  }
+  .profile-container {
+    display: flex;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    margin-top: 16px;
+  }
+  .profile:not(:last-child) {
+    margin-right: 2vw;
+  }
+  .profile-icon {
+    position: relative;
+    border-radius: 4px;
+    height: calc(10vw + 4px);
+    width: calc(10vw + 4px);
+    max-height: 200px;
+    max-width: 200px;
+    min-height: 84px;
+    min-width: 84px;
+  }
+  .profile-icon::after {
+    content: '';
+    display: block;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    border-radius: 4px;
+    border: 0.3em solid transparent;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .profile-name {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 16px 0;
+    color: grey;
+    text-align: center;
+    line-height: 1.2em;
+    min-height: 1.8em;
+    color: grey;
+  }
+  .profile:hover {
+    cursor: pointer;
+  }
+  .profile:hover .profile-name {
+    color: whitesmoke;
+  }
+  .profile:hover .profile-icon::after {
+    border: calc(0.2vw + 1px) solid #e5e5e5;
+  }
+  
+  .eye {
+    position: absolute;
+    top: 28%;
+    left: 14%;
+    width: 12%;
+    height: 12%;
+    border-radius: 50%;
+    background-color: whitesmoke;
+  }
+  .eye:nth-child(2) {
+    left: 74%;
+  }
+  .mouth {
+    position: absolute;
+    top: 24%;
+    left: 34%;
+    width: 60%;
+    height: 40%;
+    border: solid 4px #fff;
+    border-color: #fff transparent transparent transparent;
+    border-radius: 50%/24px 24px 0 0;
+    transform: rotate(180deg);
+  }
+  
+  .main-navigation {
+    position: absolute;
+    width: 100%;
+    background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.7) 10%,
+      rgba(0, 0, 0, 0)
+    );
+    padding: 1.2rem;
+  }
+  .netflix-icon {
+    cursor: pointer;
+    margin-left: 1vw;
+    width: 100px;
+    height: 24px;
+  }
+  .manage-profiles {
+    display: block;
+    margin: 3em auto 1em auto;
+    font-size: max(1.2vw, 12px);
+    border: 1px solid grey;
+    color: grey;
+    text-transform: uppercase;
+    padding: 0.5em 1.5em;
+    letter-spacing: 2px;
+    cursor: pointer;
+    background-color: transparent;
+  }
+  .manage-profiles:hover {
+    border: 1px solid whitesmoke;
+    color: whitesmoke;
+  }
+  .animation-container {
+    max-width: 90%;
+    animation: fadeInWhileScalingDown 500ms forwards;
+  }
+  
+  @keyframes fadeInWhileScalingDown {
+    0% {
+      opacity: 0;
+      transform: scale(1.1);
+    }
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+ 
